@@ -1,5 +1,3 @@
-// Relative Path: src\app\api\generate-plan\route.ts
-
 import { NextResponse } from 'next/server';
 import OpenAI from "openai";
 
@@ -44,11 +42,12 @@ Please provide:
 4. If PCOS or Diabetes are mentioned, suggest a low carb diet for PCOS or Diabetes associated with weight loss.
 5. For sleep studies, suggest a possible sleep study prescribed by our doctor.
 6. Keep answers brief, professional and simple and in line with our services, don't suggest outside suggestions or use the patient's name.
-7) If patient is on TRT or HRT mention that we will check labs at 6 weeks to monitor progress.
-8) If patient has low vitamin D mention to take 5,000 IU/day and recheck levels at 3 months.
-9) If high a1c mention that at 6 weeks if it's not managed we'll consult with the doctor about semaglutide dosage changes or metformin.
+7. If patient is on TRT or HRT mention that we will check labs at 6 weeks to monitor progress.
+8. If patient has low vitamin D mention to take 5,000 IU/day and recheck levels at 3 months.
+9. If high a1c is mentioned, include this exact statement in the plan: "At 6 weeks, we will review A1C levels. If not adequately managed, we'll consult with the doctor about potential adjustments to treatment, which may include changes to semaglutide dosage or the addition of metformin."
+10. Do not include any asterisks or bullet points in your response.
 
-Format the response as follows:
+Format the response exactly as follows:
 
 Personalized Plan:
 1. [Action 1]
@@ -56,10 +55,10 @@ Personalized Plan:
 3. [Action 3]
 
 Healthy Solutions:
-* [Solution 1]
-* [Solution 2]
-* [Solution 3]
-* Reach out to our team for any support or questions. We are here to help! - Kayla`;
+1. [Solution 1]
+2. [Solution 2]
+3. [Solution 3]
+4. Reach out to our team for any support or questions. We are here to help! - Kayla`;
 
     const chatCompletion = await openai.chat.completions.create({
       messages: [{ role: "user", content: prompt }],
@@ -82,11 +81,17 @@ Healthy Solutions:
     let healthySolutions: string[] = [];
 
     if (planMatch && planMatch[1]) {
-      plan = planMatch[1].split('\n').filter(item => item.trim().length > 0).map(item => item.replace(/^\d+\.\s*/, '').trim());
+      plan = planMatch[1].split('\n')
+        .filter(item => item.trim().length > 0)
+        .map(item => item.replace(/^\d+\.\s*/, '').trim())
+        .filter(item => item !== '');
     }
 
     if (healthySolutionsMatch && healthySolutionsMatch[1]) {
-      healthySolutions = healthySolutionsMatch[1].split('\n').filter(item => item.trim().length > 0).map(item => item.replace(/^\*\s*/, '').trim());
+      healthySolutions = healthySolutionsMatch[1].split('\n')
+        .filter(item => item.trim().length > 0)
+        .map(item => item.replace(/^\d+\.\s*/, '').trim())
+        .filter(item => item !== '');
     }
 
     if (plan.length === 0 || healthySolutions.length === 0) {
