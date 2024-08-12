@@ -42,8 +42,10 @@ Please provide:
 3. Do not mention specialists, nutritionists, dieticians or ftness trainers.
 4. If PCOS or Diabetes are mentioned, suggest a low carb diet for PCOS or Diabetes associated with weight loss.
 5. For sleep studies, suggest a possible sleep study prescribed by our doctor.
-6. Keep answers brief, professional and simple and in line with our services, don't suggest outside suggestions as they'll be added manually by our staff.
-
+6. Keep answers brief, professional and simple and in line with our services, don't suggest outside suggestions or use the patient's name as they'll be added manually by our staff.
+7) If patient is on TRT or HRT mention that we will check lasts at 6 weeks to monitor progress.
+8) If patient has low vitamin D mention to take 5,000 IU/day and recheck levels at 3 months.
+9) If high a1c mention that at 6 weeks if it's not managed we'll consult with the doctor about semaglutide dosage changes or metformin.
 Format the response as follows:
 
 Personalized Plan:
