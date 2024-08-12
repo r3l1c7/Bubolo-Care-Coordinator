@@ -163,7 +163,7 @@ const CarePlanPDF: React.FC<CarePlanPDFProps> = ({ patientData, plan, healthySol
       <View style={styles.footer}>
         <View style={styles.orangeLine} />
         <Text style={styles.footerText}>
-          678-940-6456 | bubolo.care | support@bubolo.care | 3889 Cobb Pkwy NW, Acworth, GA 30101
+          678-940-6456 | bubolo.care | kaylar@bubolo365.com | 3889 Cobb Pkwy NW, Acworth, GA 30101
         </Text>
       </View>
     </Page>
