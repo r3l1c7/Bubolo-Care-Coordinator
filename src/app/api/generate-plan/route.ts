@@ -23,7 +23,7 @@ export async function POST(req: Request) {
     }
 
     console.log('Generating new plan using OpenAI');
-    const prompt = `Generate a care plan for a medical clinic that offers weight loss, hormone replacement therapy, hair transplants, general practice, mens ed treatment using ICI or gainswave and prp, and mental health counseling; based on the following patient data:
+    const prompt = `Generate a care plan for a medical clinic that offers weight loss, hormone replacement therapy, mental health counciling, general practice, hair transplants, general practice, mens ed treatment using ICI or gainswave and prp, and mental health counseling; based on the following patient data:
 
 Date of Birth: ${patientData.dob}
 Service: ${patientData.service}
@@ -49,7 +49,8 @@ Please provide:
 11. If high estrogen or estradiol is mentioned, suggest, "Take 2 DIM daily to help lower estrogen."
 12. Save diet and general recommendations for "Healthy Solutions" section.
 13. Pay attention to the service, don't suggest a new service that they're already on.
-
+14. If energy levels are low suggest our essential multivitam as the b vitamins can help energy levels.
+15. If any goal or objective sound like they lean towards requiring mental health counciling, suggest that they speak to our mental health counselor.
 Format the response exactly as follows:
 
 Personalized Plan:
