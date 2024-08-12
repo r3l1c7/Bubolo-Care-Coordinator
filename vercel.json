@@ -1,6 +1,6 @@
 {
     "functions": {
-      "api/generate-plan/route": {
+      "src/app/api/**/*": {
         "maxDuration": 60
       }
     }
