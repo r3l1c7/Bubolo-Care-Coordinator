@@ -39,10 +39,10 @@ Please provide:
 
 1. A personalized plan with at least 3 specific actions.
 2. A list of healthy solutions with at least 3 items.
-3. Do not mention specialists, nutritionists or dieticians.
-4. Suggest a low carb diet for PCOS or Diabetes associated with weight loss.
+3. Do not mention specialists, nutritionists, dieticians or ftness trainers.
+4. If PCOS or Diabetes are mentioned, suggest a low carb diet for PCOS or Diabetes associated with weight loss.
 5. For sleep studies, suggest a possible sleep study prescribed by our doctor.
-6. Keep answers brief, professional, personable and simple and in line with our services, don't suggest outside suggestions as they'll be added manually by our staff.
+6. Keep answers brief, professional and simple and in line with our services, don't suggest outside suggestions as they'll be added manually by our staff.
 
 Format the response as follows:
 
