@@ -23,7 +23,7 @@ export async function POST(req: Request) {
     }
 
     console.log('Generating new plan using OpenAI');
-    const prompt = `Generate a care plan based on the following patient data:
+    const prompt = `Generate a care plan for a medical clinic that offers weight loss, hormone replacement therapy, hair transplants, general practice, mens ed treatment using ICI or gainswave and prp, and mental health counciling; based on the following patient data:
 
 Name: ${patientData.name}
 Date of Birth: ${patientData.dob}
@@ -39,6 +39,10 @@ Please provide:
 
 1. A personalized plan with at least 3 specific actions.
 2. A list of healthy solutions with at least 3 items.
+3. Do not mention specialists, nutritionists or dieticians.
+4. Suggest a low carb diet for PCOS or Diabetes associated with weight loss.
+5. For sleep studies, suggest a possible sleep study prescribed by our doctor.
+6. Keep answers brief, professional, personable and simple and in line with our services, don't suggest outside suggestions as they'll be added manually by our staff.
 
 Format the response as follows:
 
