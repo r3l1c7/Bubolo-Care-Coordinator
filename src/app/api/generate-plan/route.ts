@@ -46,6 +46,7 @@ Please provide:
 8. If patient has low vitamin D mention to take 5,000 IU/day and recheck levels at 3 months.
 9. If high a1c is mentioned, include this exact statement in the plan: "At 6 weeks, we will review A1C levels. If not adequately managed, we'll consult with the doctor about potential adjustments to treatment, which may include changes to semaglutide dosage or the addition of metformin."
 10. Do not include any asterisks or bullet points in your response.
+11. If high estrogen is mentioned, suggest, "Take 2 DIM daily to help lower estrogen."
 
 Format the response exactly as follows:
 
