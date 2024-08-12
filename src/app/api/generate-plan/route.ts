@@ -34,7 +34,7 @@ ${patientData.goals.map((goal, index) => `${index + 1}. ${goal}`).join('\n')}
 Objectives:
 ${patientData.objectives.map((objective, index) => `${index + 1}. ${objective}`).join('\n')}
 
-Please provide:
+Go step by step and make sure you provide:
 
 1. A personalized plan with at least 3 specific actions.
 2. A list of healthy solutions with at least 3 items.
@@ -43,15 +43,18 @@ Please provide:
 5. For sleep studies, suggest a possible sleep study prescribed by our doctor.
 6. Keep answers brief, professional and simple and in line with our services, don't suggest outside suggestions or use the patient's name.
 7. If patient is on TRT or HRT mention that we will check labs at 6 weeks to monitor progress.
-8. If patient has low vitamin D mention to take 5,000 IU/day and recheck levels at 3 months.
+8. If patient has low vitamin D mention to take 5,000 IU/day and recheck levels at 3 months. ONLY IF LOW VITAMIN D IS MENTIONED.
 9. If high a1c is mentioned, include this exact statement in the plan: "At 6 weeks, we will review A1C levels. If not adequately managed, we'll consult with the doctor about potential adjustments to treatment, which may include changes to semaglutide dosage or the addition of metformin."
 10. Do not include any asterisks or bullet points in your response.
 11. If high estrogen or estradiol is mentioned, suggest, "Take 2 DIM daily to help lower estrogen."
 12. Save diet and general recommendations for "Healthy Solutions" section.
 13. Pay attention to the service, don't suggest a new service that they're already on.
-14. If energy levels are low suggest our essential multivitam as the b vitamins can help energy levels.
-15. If any goal or objective sound like they lean towards requiring mental health counciling, suggest that they speak to our mental health counselor.
-Format the response exactly as follows:
+14. If energy levels are low suggest our "daily essential multivitamin" as the b vitamins can help energy levels.
+15. If any goal or objective sound like they really are requiring mental health counciling, suggest that they speak to our mental health counselor. Only suggest this when it's needed, for example depression or other issues not pertaining to weight loss and unrelated conditions.
+
+Make sure these guidelines are followed.
+
+Always format the response exactly as follows:
 
 Personalized Plan:
 1. [Action 1]
